@@ -339,6 +339,7 @@ body {
             <div id='messageBanner' class="message-inner">
               <div class="text-block-8">USE <strong>WELCOME10</strong> FOR 10% OFF<strong></strong></div>
             </div>
+            <div id="volumeToggle" class="volume"><img src="images/high-volume.png" loading="lazy" alt="" class="image-6"></div>
           </div>
         </div>
       </div>
@@ -349,20 +350,14 @@ body {
   <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
   <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
   <script>
-  function toggleMute() {
-
-    var video=document.getElementById("mainVideo");
-
-    video.muted = !video.muted;
-
+    function toggleMute() {
+      var video=document.getElementById("mainVideo");
+      video.muted = !video.muted;
     }
 
-    $('#messageBanner').on("click", function(e){
+    $('#volumeToggle').on("click", function(e){
       toggleMute();
     });
-
-    setTimeout(toggleMute,1000);
-
   </script>
 </body>
 </html>

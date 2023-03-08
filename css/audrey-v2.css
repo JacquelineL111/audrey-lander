@@ -542,6 +542,7 @@
 }
 
 .message-container {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -656,6 +657,20 @@
 
 .html-embed {
   display: block;
+}
+
+.volume {
+  position: absolute;
+  left: auto;
+  top: 0%;
+  right: 0%;
+  bottom: auto;
+  margin-top: 75px;
+  margin-right: 10px;
+}
+
+.image-6 {
+  max-width: 35px;
 }
 
 @media screen and (max-width: 991px) {
@@ -1360,6 +1375,14 @@
 
   .image-4 {
     margin-bottom: 9px;
+  }
+
+  .volume {
+    margin-top: 110px;
+  }
+
+  .image-6 {
+    max-width: 32px;
   }
 }
 
