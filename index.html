@@ -27,7 +27,7 @@ body {
   <main class="main">
     
     <div data-video-urls="https://cdn.shopify.com/videos/c/o/v/555a3e665ba847ba94665ee60ef546a2.mp4" data-autoplay="true" data-loop="true" class="background-video w-background-video w-background-video-atom">
-      <video onload="unmute()" id="66356102-078d-28cb-9c93-199f5e6cbd7b-video" autoplay="" loop="" playsinline="" muted data-object-fit="cover">
+      <video id="66356102-078d-28cb-9c93-199f5e6cbd7b-video" autoplay="" loop="" playsinline="" muted data-object-fit="cover">
         <source src="https://cdn.shopify.com/videos/c/o/v/555a3e665ba847ba94665ee60ef546a2.mp4" type="video/mp4">
       </video>
     </div>
@@ -349,12 +349,9 @@ body {
   <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
 
   <script>
-  function unmute() {
-    var videoFile = document.getElementById('66356102-078d-28cb-9c93-199f5e6cbd7b-video');
-    if (videoFile.muted === false) {    
-      videoFile.muted = true;
-    }
-  }
+  document.addEventListener("load", function(){
+    document.getElementById("66356102-078d-28cb-9c93-199f5e6cbd7b-video").volume=1;
+  });
   </script>
 </body>
 </html>
