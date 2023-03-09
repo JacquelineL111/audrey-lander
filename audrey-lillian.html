@@ -319,7 +319,7 @@ body {
             </div>
             <div data-w-id="3c9417f3-32ff-15e0-759e-9656106b4c1a" class="button-block end-card">
               <div class="div-block-2">
-                <a href="#" class="button no-outline w-button">Shop <br>Best Sellers</a>
+                <a href="#" id="shopBestSellers" class="button no-outline w-button">Shop <br>Best Sellers</a>
               </div>
             </div>
           </div>
@@ -329,20 +329,6 @@ body {
             <div data-w-id="b670989d-3360-2f15-4c08-d08bf4e8c699" class="button-block">
               <div class="div-block-2">
                 <a href="#" class="button no-outline w-button">Shop<br>Best<br>Sellers</a>
-              </div>
-            </div>
-            <div class="product-card-block nomargin">
-              <div class="product-card-container">
-                <div class="product-thumb"><img src="images/Slushy_2000x2000_01.webp" loading="lazy" sizes="100vw" srcset="images/Slushy_2000x2000_01-p-500.webp 500w, images/Slushy_2000x2000_01-p-800.webp 800w, images/Slushy_2000x2000_01-p-1080.webp 1080w, images/Slushy_2000x2000_01.webp 1346w" alt="" class="image"></div>
-                <div class="div-block-3">
-                  <div class="div-block-4">
-                    <h1 class="product-card-title">SLUSHY Serum</h1>
-                    <div class="text-block">$30</div>
-                  </div>
-                  <div class="div-block-6">
-                    <a data-w-id="b670989d-3360-2f15-4c08-d08bf4e8c6a8" href="#" class="button w-button">Shop Slushy</a>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -374,6 +360,13 @@ body {
       gtag("event", "click", {
         "event_category": "innbeautylab",
         "event_label": "Volume Toggle"
+      })
+    });
+
+    $('#shopBestSellers').on("click", function(e){
+      gtag("event", "card_click", {
+        "event_category": "innbeautylab",
+        "event_label": "Shop Best Sellers"
       })
     });
   </script>
