@@ -1,12 +1,3 @@
-
-<script>
-{/* function volumeToggle() {
-    gtag("event", "click", {
-        "event_category": "innbeautylab",
-        "event_label": "Volume Toggle"
-    })
-} */}
-
 {/* onlick="openCollection()" */}
 function openCollection() {
     gtag("event", "card_click", {
@@ -70,5 +61,3 @@ function buyGlazedDewy() {
         "event_label": "Glazed and Dewy"
     })
 }
-
-</script>        
