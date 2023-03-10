@@ -497,13 +497,26 @@
   grid-template-rows: auto auto;
 }
 
+
 .collection-header {
   padding-right: 20px;
   padding-left: 20px;
 }
 
+.collection-header.center {
+  margin-bottom: 20px;
+  font-size: 26px;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .heading-2 {
   margin-bottom: 0px;
+}
+
+.product-grid-item {
+  position: relative;
 }
 
 .heading-3 {
@@ -1346,6 +1359,11 @@
 
   .collection-header {
     padding: 20px 20px 0px;
+  }
+
+  .collection-header.center {
+    margin-top: 0px;
+    font-size: 22px;
   }
 
   .heading-2 {
