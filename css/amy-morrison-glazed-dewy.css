@@ -2207,3 +2207,7 @@
   }
 }
 
+.white-button {
+  background: white;
+  color: black;
+}
