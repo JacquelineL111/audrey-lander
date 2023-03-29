@@ -2211,3 +2211,9 @@
   background: white;
   color: black;
 }
+
+.pinkstars {
+  max-width: 100px;
+  margin-bottom: 4px;
+  margin-right: 5px;
+}
