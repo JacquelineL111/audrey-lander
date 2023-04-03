@@ -1,0 +1,322 @@
+<html data-wf-page="640a36f90796bf41707d1989" data-wf-site="640a36f90796bfd1687d1988">
+<head>
+  <meta charset="utf-8">
+  <title>Face Glaze Highlighting Gel Cream | Clean + Clinical Skincare by INNBEAUTY PROJECT</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+* {
+  box-sizing:border-box
+}
+
+
+h1 {
+  color: white;
+  text-align:center;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom:0;
+}
+
+.line {
+  width:100px;
+  height:1px;
+  margin:20px auto 40px auto;
+  border-bottom:1px solid white;
+}
+
+img {
+  width:100%;
+  display:block;
+}
+
+.container {
+  width:50%;
+  max-width: 400px;
+  display:block;
+  margin:30px auto;
+}
+
+#before-after-slider {
+  width:100%;
+  position:relative;
+  overflow:hidden;
+  border:3px solid white;
+}
+
+#after-image {
+  display:block
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.image-switcher-container {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  align-items: center;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.thumbnail-container {
+  max-width: 100px;
+/*   border: 1px solid red; */
+}
+
+.thumbnail-container.active {
+  max-width: 100px;
+  border: 2px solid black;
+}
+
+#before-image {
+  position:absolute;
+  height:100%;
+  width:50%;
+  top:0;
+  left:0;
+  overflow:hidden;
+  z-index:2;
+}
+
+#resizer {
+  position:absolute;
+  display:flex;
+  align-items:center;
+  z-index:10;
+  top:0;
+  left:50%;
+  height:100%;
+  width:2px;
+  background:white;
+  /*Stop vertical scrolling on touch*/
+  -ms-touch-action: pan-y;
+    touch-action: pan-y;
+}
+
+.resizer-icon {
+  position: absolute;
+  z-index: 10;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+    z-index: 4;
+    top: auto;
+    bottom: 50px;
+    left: auto;
+    right: -87px;
+    margin: 0 0;
+    width: 180px;
+  backdrop-filter: blur(32px)
+}
+
+
+#resizer:after {
+  font-weight:900;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:white;
+  position:absolute;
+  margin: 0 0 0 -22px;
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  border:3px solid white;
+
+}
+
+@media (max-width:767px) {
+  .container {
+    width:100%;
+    padding:0 20px
+  }
+}
+
+  </style>
+</head>
+<body>
+    <div class="container">
+        <div id="before-after-slider">
+            <div id="before-image">
+            <img class='show before-1' id='beforeImage1' src="https://cdn.shopify.com/s/files/1/0261/0108/8304/files/B_A_PDP_-_refine_before_01.jpg?v=1678117831&width=550" alt="before"/>
+            <img class='hide before-2' id='beforeImage2' src="https://cdn.shopify.com/s/files/1/0261/0108/8304/files/Green_Machine_Serum_-_before_01_2.png?v=1664376686&width=550" alt="before"/>
+            </div>
+            <div id="after-image">
+            <img class='show after-1' id='afterImage1' src="https://cdn.shopify.com/s/files/1/0261/0108/8304/files/B_A_PDP_-_refine_after_01.jpg?v=1678117841&width=550" alt="After"/>
+            <img class='hide after-2' id='afterImage2' src="https://cdn.shopify.com/s/files/1/0261/0108/8304/files/Green_Machine_Serum_-_after_01_2.png?v=1664376685&width=550" alt="After"/>
+            </div>
+
+            <div id="resizer">
+            <div class='resizer-icon'>
+                <img src='https://cdn.shopify.com/s/files/1/0261/0108/8304/files/see_results_slider_icon_d1803c96-92cb-4483-9f33-ab6144175805.png?v=1678467522'>
+            </div>
+            </div>
+
+        </div>
+        <div class='image-switcher'>
+            <div class='image-switcher-container'>
+            <div class='thumbnail-container view-1 active' id='thumnailSwitch-1'>
+                <img src='https://cdn.shopify.com/s/files/1/0261/0108/8304/files/B_A_PDP_-_refine_after_01.jpg?v=1678117841&width=550' class='thumb-1'>
+            </div>
+            <div class='thumbnail-container view-2' id='thumnailSwitch-2'>
+                <img src='https://cdn.shopify.com/s/files/1/0261/0108/8304/files/Green_Machine_Serum_-_before_01_2.png?v=1664376686&width=550' class='thumb-2'>
+            </div>
+            </div>
+        </div>
+        
+    </div>
+    <script>
+        const slider = document.getElementById('before-after-slider');
+const before = document.getElementById('before-image');
+const beforeImage1 = before.getElementsByTagName('img')[0];
+const beforeImage2 = before.getElementsByTagName('img')[1];
+const resizer = document.getElementById('resizer');
+
+let active = false;
+
+//Sort overflow out for Overlay Image
+document.addEventListener("DOMContentLoaded", function() {
+  let width = slider.offsetWidth;
+  console.log(width);
+  beforeImage1.style.width = width + 'px';
+  beforeImage2.style.width = width + 'px';
+});
+
+//Adjust width of image on resize 
+window.addEventListener('resize', function() {
+  let width = slider.offsetWidth;
+  console.log(width);
+  beforeImage1.style.width = width + 'px';
+  beforeImage2.style.width = width + 'px';
+})
+
+resizer.addEventListener('mousedown',function(){
+  active = true;
+  resizer.classList.add('resize');
+
+});
+
+document.body.addEventListener('mouseup',function(){
+  active = false;
+  resizer.classList.remove('resize');
+});
+
+document.body.addEventListener('mouseleave', function() {
+  active = false;
+  resizer.classList.remove('resize');
+});
+
+document.body.addEventListener('mousemove',function(e){
+  if (!active) return;
+  let x = e.pageX;
+  x -= slider.getBoundingClientRect().left;
+  slideIt(x);
+  pauseEvent(e);
+});
+
+resizer.addEventListener('touchstart',function(){
+  active = true;
+  resizer.classList.add('resize');
+});
+
+document.body.addEventListener('touchend',function(){
+  active = false;
+  resizer.classList.remove('resize');
+});
+
+document.body.addEventListener('touchcancel',function(){
+  active = false;
+  resizer.classList.remove('resize');
+});
+
+//calculation for dragging on touch devices
+document.body.addEventListener('touchmove',function(e){
+  if (!active) return;
+  let x;
+
+  let i;
+  for (i=0; i < e.changedTouches.length; i++) {
+    x = e.changedTouches[i].pageX; 
+  }
+
+  x -= slider.getBoundingClientRect().left;
+  slideIt(x);
+  pauseEvent(e);
+});
+
+function slideIt(x){
+  let transform = Math.max(0,(Math.min(x,slider.offsetWidth)));
+  before.style.width = transform+"px";
+  resizer.style.left = transform-0+"px";
+}
+
+//stop divs being selected.
+function pauseEvent(e){
+  if(e.stopPropagation) e.stopPropagation();
+  if(e.preventDefault) e.preventDefault();
+  e.cancelBubble=true;
+  e.returnValue=false;
+  return false;
+}
+
+var button1 = document.getElementById('thumnailSwitch-1');
+var button2 = document.getElementById('thumnailSwitch-2');
+
+button1.onclick = function() {
+  var before1div = document.getElementById('beforeImage1');
+  var after1div = document.getElementById('afterImage1');
+  var before2div = document.getElementById('beforeImage2');
+  var after2div = document.getElementById('afterImage2');
+  
+  if (button1.classList.contains('active')) {
+    return
+  } else {
+    
+    button2.classList.remove('active');
+    button1.classList.add('active');
+
+    if (before1div.style.display === 'none') {
+      before1div.style.display = 'block';
+      before2div.style.display = 'none';
+    }
+    if (after1div.style.display === 'none') {
+      after1div.style.display = 'block';
+      after2div.style.display = 'none';
+    }
+  }
+};
+
+button2.onclick = function() {
+  var before1div = document.getElementById('beforeImage1');
+  var after1div = document.getElementById('afterImage1');
+  var before2div = document.getElementById('beforeImage2');
+  var after2div = document.getElementById('afterImage2');
+
+  if (button2.classList.contains('active')) {
+    return
+  } else {
+    
+    button1.classList.remove('active');
+    button2.classList.add('active');
+    
+    if (before1div.style.display !== 'none') {
+      before1div.style.display = 'none';
+      before2div.style.display = 'block';
+    }
+
+    if (after1div.style.display !== 'none') {
+      after1div.style.display = 'none';
+      after2div.style.display = 'block';
+    }
+  }
+};
+    </script>
+</body>
