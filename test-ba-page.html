@@ -63,12 +63,10 @@ img {
 }
 
 .thumbnail-container {
-  max-width: 100px;
-/*   border: 1px solid red; */
+  max-width: 150px;
 }
 
 .thumbnail-container.active {
-  max-width: 100px;
   border: 2px solid black;
 }
 
@@ -113,6 +111,7 @@ img {
     right: -87px;
     margin: 0 0;
     width: 180px;
+    -webkit-backdrop-filter: blur(32px);
   backdrop-filter: blur(32px)
 }
 
@@ -257,12 +256,12 @@ img {
     <div class="container">
         <div id="before-after-slider">
             <div id="before-image">
-            <img class='show before-1' id='beforeImage1' src="https://cdn.shopify.com/s/files/1/0261/0108/8304/files/B_A_PDP_-_refine_before_01.jpg?v=1678117831&width=550" alt="before"/>
-            <img class='hide before-2' id='beforeImage2' src="https://cdn.shopify.com/s/files/1/0261/0108/8304/files/Green_Machine_Serum_-_before_01_2.png?v=1664376686&width=550" alt="before"/>
+            <img class='show before-1' id='beforeImage1' src="https://cdn.shopify.com/s/files/1/0261/0108/8304/files/GM_B_A_before_01.jpg?v=1679931632" alt="before"/>
+            <img class='hide before-2' id='beforeImage2' src="https://cdn.shopify.com/s/files/1/0261/0108/8304/files/GM_B_A_after_01.jpg?v=1679931646" alt="before"/>
             </div>
             <div id="after-image">
-            <img class='show after-1' id='afterImage1' src="https://cdn.shopify.com/s/files/1/0261/0108/8304/files/B_A_PDP_-_refine_after_01.jpg?v=1678117841&width=550" alt="After"/>
-            <img class='hide after-2' id='afterImage2' src="https://cdn.shopify.com/s/files/1/0261/0108/8304/files/Green_Machine_Serum_-_after_01_2.png?v=1664376685&width=550" alt="After"/>
+            <img class='show after-1' id='afterImage1' src="https://cdn.shopify.com/s/files/1/0261/0108/8304/files/GM_B_A_275x396_01.jpg?v=1679931674" alt="After"/>
+            <img class='hide after-2' id='afterImage2' src="https://cdn.shopify.com/s/files/1/0261/0108/8304/files/GM_B_A_275x396_02.jpg?v=1679931680" alt="After"/>
             </div>
 
             <div id="resizer">
@@ -275,10 +274,10 @@ img {
         <div class='image-switcher'>
             <div class='image-switcher-container'>
             <div class='thumbnail-container view-1 active' id='thumnailSwitch-1'>
-                <img src='https://cdn.shopify.com/s/files/1/0261/0108/8304/files/B_A_PDP_-_refine_after_01.jpg?v=1678117841&width=550' class='thumb-1'>
+                <img src='https://cdn.shopify.com/s/files/1/0261/0108/8304/files/GM_B_A_after_01.jpg?v=1679931646' class='thumb-1'>
             </div>
             <div class='thumbnail-container view-2' id='thumnailSwitch-2'>
-                <img src='https://cdn.shopify.com/s/files/1/0261/0108/8304/files/Green_Machine_Serum_-_before_01_2.png?v=1664376686&width=550' class='thumb-2'>
+                <img src='https://cdn.shopify.com/s/files/1/0261/0108/8304/files/GM_B_A_275x396_02.jpg?v=1679931680' class='thumb-2'>
             </div>
             </div>
         </div>
