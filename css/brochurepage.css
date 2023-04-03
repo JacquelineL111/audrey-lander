@@ -36,6 +36,12 @@
       font-weight: 700;
   }
 
+  h2 {
+    font-size: 18px;
+    font-family: Helvetica Neue;
+      font-weight: 700;
+  }
+
   
 .descriptors {
     display: -webkit-box;
