@@ -43,38 +43,29 @@
     display:block
   }
   
-  
-  .before-text {
-    position: absolute;
-    right: auto;
-    left: 4px;
-    bottom: 4px;
+  .after-text, .before-text {
     color: #000000;
     background: #ffffff;
     border: 1px solid #000000;
     z-index: 11;
     padding: 5px 9px;
-    font-size: 12px;
+    font-size: 11px;
     border-radius: 3px;
     -webkit-backdrop-filter: blur(32px);
     backdrop-filter: blur(32px);
     text-transform: uppercase;
   }
   
+  .before-text {
+    position: absolute;
+    left: 4px;
+    bottom: 4px;
+  }
+  
   .after-text {
     position: absolute;
     right: 4px;
     bottom: 4px;
-    color: #000000;
-    background: #ffffff;
-    border: 1px solid #000000;
-    z-index: 11;
-    padding: 5px 9px;
-    font-size: 12px;
-    border-radius: 3px;
-    -webkit-backdrop-filter: blur(32px);
-    backdrop-filter: blur(32px);
-    text-transform: uppercase;
   }
   
   
