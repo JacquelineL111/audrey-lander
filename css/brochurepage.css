@@ -45,10 +45,11 @@
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -webkit-box-align: start;
-    -webkit-align-items: flex-start;
-    -ms-flex-align: start;
-    align-items: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: center;
   }
   
   .pill-descriptor {
@@ -74,6 +75,10 @@
     display:block;
   }
   
+  .text-center {
+    text-align: center;
+  }
+
   .container {
     width:100%;
     display:block;
