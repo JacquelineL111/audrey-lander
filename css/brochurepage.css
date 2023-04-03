@@ -1,0 +1,232 @@
+/* BEFORE AND AFTER */
+* {
+    box-sizing:border-box
+  }
+  
+  .main {
+      padding: 20px;
+  }
+  
+  h1 {
+    color: white;
+    text-align:center;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom:0;
+  }
+  
+  .line {
+    width:100px;
+    height:1px;
+    margin:20px auto 40px auto;
+    border-bottom:1px solid white;
+  }
+  
+  img {
+    width:100%;
+    display:block;
+  }
+  
+  .container {
+    width:100%;
+    display:block;
+    margin: 0px auto;
+  }
+  
+  #before-after-slider {
+    width:100%;
+    position:relative;
+    overflow:hidden;
+    border:3px solid white;
+  }
+  
+  #after-image {
+    display:block
+  }
+  
+  
+  .before-text {
+    position: absolute;
+    right: auto;
+    left: 4px;
+    bottom: 4px;
+    color: #fff;
+    background: rgba(0,0,0,.25);
+    z-index: 4;
+    padding: 5px 9px;
+    font-size: 12px;
+    border-radius: 3px;
+    -webkit-backdrop-filter: blur(32px);
+    backdrop-filter: blur(32px)
+  }
+  
+  .after-text {
+    position: absolute;
+    right: 4px;
+    bottom: 4px;
+    color: #fff;
+    background: rgba(0,0,0,.25);
+    z-index: 4;
+    padding: 5px 9px;
+    font-size: 12px;
+    border-radius: 3px;
+    -webkit-backdrop-filter: blur(32px);
+    backdrop-filter: blur(32px)
+  }
+  
+  
+  .show {
+    display: block;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  .image-switcher-container {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    align-items: center;
+    padding: 10px;
+    margin: 0 auto;
+  }
+  
+  .thumbnail-container {
+    max-width: 200px;
+  }
+  
+  .thumbnail-container.active {
+    border: 3px solid #ffffff;
+    outline: 3px solid #000000;
+    outline-offset: 4px;
+  }
+  
+  #before-image {
+    position:absolute;
+    height:100%;
+    width:50%;
+    top:0;
+    left:0;
+    overflow:hidden;
+    z-index:2;
+  }
+  
+  #resizer {
+    position:absolute;
+    display:flex;
+    align-items:center;
+    z-index:10;
+    top:0;
+    left:50%;
+    height:100%;
+    width:2px;
+    background:white;
+    /*Stop vertical scrolling on touch*/
+    -ms-touch-action: pan-y;
+      touch-action: pan-y;
+  }
+  
+  .resizer-icon {
+    position: absolute;
+    z-index: 10;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+      z-index: 4;
+      top: auto;
+      bottom: 50px;
+      left: auto;
+      right: -87px;
+      margin: 0 0;
+      width: 180px;
+      -webkit-backdrop-filter: blur(32px);
+    backdrop-filter: blur(32px)
+  }
+  
+  
+  #resizer:after {
+    font-weight:900;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    position:absolute;
+    margin: 0 0 0 -22px;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    border:3px solid white;
+  
+  }
+  
+  @media screen and (min-width: 1000px) {
+      .line {
+      width:100px;
+      height:1px;
+      margin:20px auto 40px auto;
+      border-bottom:1px solid white;
+      }
+  
+      img {
+      width:100%;
+      display:block;
+      }
+  
+      .container {
+      width:50%;
+      max-width: 500px;
+      display:block;
+      margin:30px auto;
+      }
+  
+      #before-after-slider {
+      width:100%;
+      position:relative;
+      overflow:hidden;
+      border:3px solid white;
+      }
+  
+      #after-image {
+      display:block
+      }
+  
+      .show {
+      display: block;
+      }
+  
+      .hide {
+      display: none;
+      }
+  
+      .image-switcher-container {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      align-items: center;
+      padding: 10px;
+      margin: 0 auto;
+      }
+  
+      .thumbnail-container {
+          max-width: 120px;
+      }
+  
+      #resizer:after {
+      font-weight:900;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      color:white;
+      position:absolute;
+      margin: 0 0 0 -22px;
+      width:40px;
+      height:40px;
+      border-radius:50%;
+      border:3px solid white;
+  
+      }
+  }
+  
