@@ -201,6 +201,8 @@
       right: -87px;
       margin: 0 0;
       width: 180px;
+      border-radius:30px;
+      overflow: hidden;
       -webkit-backdrop-filter: blur(32px);
     backdrop-filter: blur(32px)
   }
