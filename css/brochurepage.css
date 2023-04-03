@@ -152,6 +152,12 @@
   
   .thumbnail-container {
     max-width: 100px;
+    border-radius: 4px;
+  }
+
+
+  .thumbnail-container img{
+    border-radius: 3px;
   }
   
   .thumbnail-container.active {
