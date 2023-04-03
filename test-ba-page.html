@@ -48,6 +48,37 @@ img {
   display:block
 }
 
+
+.before-text {
+  position: absolute;
+  right: auto;
+  left: 4px;
+  bottom: 4px;
+  color: #fff;
+  background: rgba(0,0,0,.25);
+  z-index: 4;
+  padding: 5px 9px;
+  font-size: 12px;
+  border-radius: 3px;
+  -webkit-backdrop-filter: blur(32px);
+  backdrop-filter: blur(32px)
+}
+
+.after-text {
+  position: absolute;
+  right: 4px;
+  bottom: 4px;
+  color: #fff;
+  background: rgba(0,0,0,.25);
+  z-index: 4;
+  padding: 5px 9px;
+  font-size: 12px;
+  border-radius: 3px;
+  -webkit-backdrop-filter: blur(32px);
+  backdrop-filter: blur(32px)
+}
+
+
 .show {
   display: block;
 }
@@ -184,61 +215,6 @@ img {
     margin: 0 auto;
     }
 
-    .thumbnail-container {
-    max-width: 100px;
-    /*   border: 1px solid red; */
-    }
-
-    .thumbnail-container.active {
-    max-width: 100px;
-    border: 2px solid black;
-    }
-
-    #before-image {
-    position:absolute;
-    height:100%;
-    width:50%;
-    top:0;
-    left:0;
-    overflow:hidden;
-    z-index:2;
-    }
-
-    #resizer {
-    position:absolute;
-    display:flex;
-    align-items:center;
-    z-index:10;
-    top:0;
-    left:50%;
-    height:100%;
-    width:2px;
-    background:white;
-    /*Stop vertical scrolling on touch*/
-    -ms-touch-action: pan-y;
-        touch-action: pan-y;
-    }
-
-    .resizer-icon {
-    position: absolute;
-    z-index: 10;
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    position: absolute;
-        z-index: 4;
-        top: auto;
-        bottom: 50px;
-        left: auto;
-        right: -87px;
-        margin: 0 0;
-        width: 180px;
-    backdrop-filter: blur(32px)
-    }
-
-
     #resizer:after {
     font-weight:900;
     display:flex;
@@ -262,20 +238,21 @@ img {
         <div class="container">
             <div id="before-after-slider">
                 <div id="before-image">
-                <img class='show before-1' id='beforeImage1' src="https://cdn.shopify.com/s/files/1/0261/0108/8304/files/GM_B_A_before_01.jpg?v=1679931632" alt="before"/>
-                <img class='hide before-2' id='beforeImage2' src="https://cdn.shopify.com/s/files/1/0261/0108/8304/files/GM_B_A_275x396_01.jpg?v=1679931674" alt="before"/>
+                    <img class='show before-1' id='beforeImage1' src="https://cdn.shopify.com/s/files/1/0261/0108/8304/files/GM_B_A_before_01.jpg?v=1679931632" alt="before"/>
+                    <img class='hide before-2' id='beforeImage2' src="https://cdn.shopify.com/s/files/1/0261/0108/8304/files/GM_B_A_275x396_01.jpg?v=1679931674" alt="before"/>
                 </div>
                 <div id="after-image">
-                <img class='show after-1' id='afterImage1' src="https://cdn.shopify.com/s/files/1/0261/0108/8304/files/GM_B_A_after_01.jpg?v=1679931646" alt="After"/>
-                <img class='hide after-2' id='afterImage2' src="https://cdn.shopify.com/s/files/1/0261/0108/8304/files/GM_B_A_275x396_02.jpg?v=1679931680" alt="After"/>
+                    <img class='show after-1' id='afterImage1' src="https://cdn.shopify.com/s/files/1/0261/0108/8304/files/GM_B_A_after_01.jpg?v=1679931646" alt="After"/>
+                    <img class='hide after-2' id='afterImage2' src="https://cdn.shopify.com/s/files/1/0261/0108/8304/files/GM_B_A_275x396_02.jpg?v=1679931680" alt="After"/>
                 </div>
 
                 <div id="resizer">
-                <div class='resizer-icon'>
-                    <img src='https://cdn.shopify.com/s/files/1/0261/0108/8304/files/see_results_slider_icon_d1803c96-92cb-4483-9f33-ab6144175805.png?v=1678467522'>
+                    <div class='resizer-icon'>
+                        <img src='https://cdn.shopify.com/s/files/1/0261/0108/8304/files/see_results_slider_icon_d1803c96-92cb-4483-9f33-ab6144175805.png?v=1678467522'>
+                    </div>
                 </div>
-                </div>
-
+                <div class='before-text'><span>Before</span></div>
+                <div class='after-text'><span>After</span></div>
             </div>
             <div class='image-switcher'>
                 <div class='image-switcher-container'>
