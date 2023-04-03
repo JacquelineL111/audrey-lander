@@ -87,7 +87,7 @@
   }
   
   .thumbnail-container {
-    max-width: 125px;
+    max-width: 100px;
   }
   
   .thumbnail-container.active {
