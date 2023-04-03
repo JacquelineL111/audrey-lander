@@ -2,10 +2,26 @@
 * {
     box-sizing:border-box
   }
+
+  @font-face {
+    font-family: Helvetica Neue;
+    src: url(../fonts/helvetica-bold.woff);;
+    font-weight: 700;
+    font-style:normal;
+  }
+
+  @font-face {
+    font-family: Helvetica Neue;
+    src: url(../fonts/helvetica-light.woff);;
+    font-weight: 300;
+    font-style:normal;
+  }
   
   .main {
       padding: 20px;
       line-height: 1.4;
+      font-family: Helvetica Neue;
+      font-weight: 300;
   }
   .header-section {
     color: #000000;
@@ -17,6 +33,8 @@
 
   h1 {
     font-size: 20px;
+    font-family: Helvetica Neue;
+      font-weight: 700;
   }
 
   
