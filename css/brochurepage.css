@@ -158,11 +158,11 @@
 
   .thumbnail-container img{
     border-radius: 5px;
+    padding: 2px;
   }
   
   .thumbnail-container.active {
-    outline: 2px solid #000000;
-    outline-offset: 3px;
+    border: 2px solid #000000;
     transition: all 0.1s ease-out;
   }
   
