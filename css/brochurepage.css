@@ -144,7 +144,7 @@
   .image-switcher-container {
     display: flex;
     justify-content: center;
-    gap: 12px;
+    gap: 10px;
     align-items: center;
     padding: 10px;
     margin: 0 auto;
