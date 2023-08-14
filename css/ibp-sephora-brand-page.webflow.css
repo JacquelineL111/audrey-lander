@@ -649,7 +649,6 @@ p {
   .loader {
     background-color: rgba(0, 0, 0, 0);
     background-image: url('../images/Bright--smooth-2000x2000-04.jpg');
-    background-position: 50%;
     background-attachment: scroll;
     display: block;
   }
@@ -661,6 +660,9 @@ p {
 
   .loader-images {
     z-index: 1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
     position: absolute;
     top: 0%;
     bottom: 0%;
@@ -668,39 +670,10 @@ p {
     right: 0%;
   }
 
-  .loader-images.loader-image-1 {
-    background-image: url('../images/Homepage-banner---mobile-01.jpg');
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .loader-images.loader-image-2 {
-    background-image: url('../images/bronze-body-glow-01.jpg');
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .loader-images.loader-image-3 {
-    background-image: url('../images/Bright_tight_1300x1300_11.webp');
-    background-position: 0%;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .loader-images.loader-image-4 {
-    background-image: url('../images/Greenmachine_1350x1350_01.webp');
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .loader-images.loader-image-5 {
-    background-image: url('../images/Face-glaze-bronze-01.jpg');
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
+  .loader-images.loader-image-1, .loader-images.loader-image-2 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
   }
 
   .left-arrow-2, .right-arrow-2 {
@@ -737,6 +710,14 @@ p {
     bottom: 0%;
     left: 0%;
     right: 0%;
+  }
+
+  .image-3 {
+    height: auto;
+    max-width: none;
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
   }
 }
 
