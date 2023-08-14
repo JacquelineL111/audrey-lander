@@ -649,7 +649,7 @@ p {
   .loader {
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    display: block;
+    display: none;
   }
 
   .loader-container {
@@ -704,6 +704,7 @@ p {
   .secondary-loader {
     z-index: 4;
     background-color: #fff;
+    display: none;
     position: fixed;
     top: 0%;
     bottom: 0%;
