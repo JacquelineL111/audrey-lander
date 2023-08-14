@@ -650,6 +650,7 @@ p {
     background-color: rgba(0, 0, 0, 0);
     background-image: url('../images/Bright--smooth-2000x2000-04.jpg');
     background-position: 50%;
+    background-attachment: scroll;
     display: block;
   }
 
@@ -696,7 +697,7 @@ p {
   }
 
   .loader-images.loader-image-5 {
-    background-image: url('../images/Candyapple_1000x1000_03.jpg');
+    background-image: url('../images/Face-glaze-bronze-01.jpg');
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -726,6 +727,16 @@ p {
   .marquee-text {
     color: #27292b;
     font-weight: 700;
+  }
+
+  .secondary-loader {
+    z-index: 4;
+    background-color: #fff;
+    position: fixed;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
   }
 }
 
