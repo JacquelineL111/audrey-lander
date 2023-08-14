@@ -648,8 +648,7 @@ p {
 
   .loader {
     background-color: rgba(0, 0, 0, 0);
-    background-image: url('../images/Bright--smooth-2000x2000-04.jpg');
-    background-attachment: scroll;
+    background-image: none;
     display: block;
   }
 
