@@ -174,7 +174,7 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  display: none;
+  display: block;
   position: fixed;
   top: 0%;
   bottom: 0%;
@@ -650,7 +650,7 @@ p {
     background-color: rgba(0, 0, 0, 0);
     background-image: url('../images/Bright--smooth-2000x2000-04.jpg');
     background-position: 50%;
-    display: none;
+    display: block;
   }
 
   .loader-container {
