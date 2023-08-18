@@ -286,6 +286,7 @@ p {
   .hero {
     margin-bottom: 0;
     padding-bottom: 40px;
+    display: none;
   }
 
   .hero-container {
@@ -360,6 +361,10 @@ p {
   .h3.white-text {
     margin-top: 0;
     margin-bottom: 0;
+  }
+
+  .button-container.hide {
+    display: none;
   }
 
   .button.outline-button {
