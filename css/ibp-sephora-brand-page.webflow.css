@@ -405,6 +405,13 @@ p {
     right: 0%;
   }
 
+  .badge.spinning.first-badge {
+    top: 20px;
+    bottom: auto;
+    left: auto;
+    right: 20px;
+  }
+
   .div-block-3 {
     position: relative;
   }
@@ -934,6 +941,11 @@ p {
   .badge.spinning.hero-badge {
     margin-top: 16px;
     margin-right: 16px;
+  }
+
+  .badge.spinning.first-badge {
+    top: 12px;
+    right: 12px;
   }
 
   .product-grid {
